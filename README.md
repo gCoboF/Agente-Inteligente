@@ -4,7 +4,7 @@ Um sistema avançado de perguntas e respostas implementando arquitetura RAG (Ret
 
 ## 📌 Visão Geral
 
-![RAG Architecture](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*5zyLpZ5xQ2NvbFqA5M10Pg.png)
+![RAG Architecture](![image](https://github.com/user-attachments/assets/8b6b5328-0bd6-4660-aa0d-14b7c628af11)
 *(Diagrama conceitual da arquitetura RAG)*
 
 O sistema combina:
@@ -65,6 +65,10 @@ TIMEOUT=30
 |--------|----------|-----------|
 | POST | /generate | Processa consultas e retorna respostas |
 | GET | /health | Verifica status do serviço |
+
+
+![image](https://github.com/user-attachments/assets/b8c272f4-dac6-4ff0-a25c-911ef879ac35)
+
 
 ### Exemplo de Requisição
 ```python
