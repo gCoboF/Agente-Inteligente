@@ -31,7 +31,7 @@ class ModeloRAG:
         # para contar tokens
         self.model = genai.GenerativeModel('gemini-1.5-flash', generation_config=genai.GenerationConfig(max_output_tokens=150))
 
-        # 5. Criar a cadeia RAG
+        # 5. cria cadeia RAG
         self.qa_chain = ConversationalRetrievalChain.from_llm(
             llm=self.llm,
             retriever=self.vectorstore.as_retriever(),
@@ -49,7 +49,7 @@ class ModeloRAG:
             return {
                 "result": "A pergunta é muito longa. Digite uma pergunta mais curta.",
                 "token_count": token_count,
-                "token_countPrompt": token_countPrompt  # Added here
+                "token_countPrompt": token_countPrompt 
             }
 
         try:
@@ -69,7 +69,7 @@ class ModeloRAG:
                 return {
                     "result": "Desculpe, não consegui processar sua pergunta. Pode tentar reformular?",
                     "token_count": token_count,
-                    "token_countPrompt": token_countPrompt  # Added here
+                    "token_countPrompt": token_countPrompt  
                 }
                 
         except Exception as e:

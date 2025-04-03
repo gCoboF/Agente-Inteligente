@@ -4,17 +4,19 @@ from pydantic import BaseModel
 from modelo_rag import ModeloRAG  # classe 
 import logging
 import asyncio
+import os
+from dotenv import load_dotenv
 
-# Set up logging
+load_dotenv()
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-GOOGLE_API_KEY = 'AIzaSyD850DotOHfEnFhofRiBzhWE0ZT-iFAsvY'
+GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
 modelo_rag = ModeloRAG(google_api_key=GOOGLE_API_KEY)
 
 app = FastAPI()
 
-# Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
