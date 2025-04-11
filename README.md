@@ -3,8 +3,8 @@
 Um sistema avançado de perguntas e respostas implementando arquitetura RAG (Retrieval Augmented Generation) com FastAPI, utilizando o modelo Gemini da Google para geração de respostas contextualizadas.
 
 ## 📌 Visão Geral
-
-![RAG Architecture](![image](https://github.com/user-attachments/assets/8b6b5328-0bd6-4660-aa0d-14b7c628af11)
+![image](https://github.com/user-attachments/assets/20a6c82a-967d-47de-9274-4f6fec4d84cb)
+![image](https://github.com/user-attachments/assets/8b6b5328-0bd6-4660-aa0d-14b7c628af11)
 *(Diagrama conceitual da arquitetura RAG)*
 
 O sistema combina:
